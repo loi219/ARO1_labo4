@@ -22,6 +22,7 @@
 \usepackage{subcaption}
 \usepackage{caption}
 
+
 %Définition des couleurs
 \definecolor{havelockBlue}{rgb}{0.004, 0.42, 0.73}
 \definecolor{Monokaimagenta}{rgb}{0.86,0.08,0.24}
@@ -71,20 +72,30 @@ Sur la base du registre à décalage vu dans le cours, concevoir et implémenter
 %début d'un encadré avec la couleur définie plus haut
 \begin{tcolorbox}[colframe=Monokaimagenta,colback=white]
 \paragraph{Registre à décalage 4 bits- Max 1 page } %démarre un paragraphe
-
 Insérez une capture d’écran pour présenter votre bloc Registre à décalage 4 bits (Structure interne).
 Accompagnez-le de commentaires et d’explications nécessaires à sa compréhension.
 Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\ 
-\paragraph Le registre à décalage 4 bits permet d'effectuer un décalage de tous les bits sur la droite ou sur la gauche. L'entrée D représente les bits qu'on veut pouvoir décaler.
-L'entrée S permet de choisir l'action à effectuer: \begin{itemize}
-\item 00: HOLD, la valeur reste inchangée
-\item 01: LOAD, la valeur est placée dans l'état voulu
-\item 10: shift left, les bits sont tous décalés d'un cran verfs la gauche
-\item 11: shift right, les bits sont tous décalés d'un cran vers la droite
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{src/SHREGI_4BITS.png}
+    \captionof{figure}{Bloc SHIFT REGISTER}
+    \label{fig:SHREGI_4}
+\end{figure}
+
+Le registre à décalage 4 bits permet d'effectuer un décalage de tous les bits sur la droite ou sur la gauche. L'entrée \textbf{D} représente les bits qu'on veut pouvoir décaler.
+L'entrée \textbf{S} permet de choisir l'action à effectuer: 
+\begin{itemize}
+    \item 00: HOLD, la valeur reste inchangée
+    \item 01: LOAD, la valeur est placée dans l'état voulu
+    \item 10: shift left, les bits sont tous décalés d'un cran verfs la gauche
+    \item 11: shift right, les bits sont tous décalés d'un cran vers la droite
 \end{itemize}
-\paragraph
-L'entrée CLK est l'horloge. Lorsque l'horloge passe à 1 (flanc montant), la valeur des bits dans les balances sont changées, et lorsqu'elle passe à 0, la valeur des bits est conservée.
-Ainsi, pout effectuer un décalage, il sera tout d'abord nécessaire de mettre l'entrée S à 1 et d'avoir un flanc montant pour que les bits des balances prennent la valeur de l'entrée D. Ensuite, on peut changer la valeur de l'entrée S dans le but d'avoir un décalage sur la droite ou sur la gauche. Dès lors, à chaque fois que l'horloge passera de 0 à 1, les bits vont tous se décaler d'un cran.
+\vspace{1em}
+L'entrée CLK est correspond à notre horloge, l'utilisation d'un entrée simple se justifie de la sorte que le bloc sera utilisé dans un autre cicruit qui lui aura une vraie horloge.\\
+Lorsque l'horloge passe à 1 (flanc montant), la valeur des bits dans les balances sont changées, et lorsqu'elle passe à 0, la valeur des bits est conservée.
+Ainsi, pout effectuer un décalage, il sera tout d'abord nécessaire de mettre l'entrée \textbf{S} à 1 et d'avoir un flanc montant pour que les bits des balances prennent la valeur de l'entrée \textbf{D}. Ensuite, on peut changer la valeur de l'entrée S dans le but d'avoir un décalage sur la droite ou sur la gauche. Dès lors, à chaque fois que l'horloge passera de 0 à 1, les bits vont tous se décaler d'un cran.
+    
 %fin de l'encadré
 \end{tcolorbox}
 
