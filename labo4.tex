@@ -71,13 +71,67 @@ Sur la base du registre à décalage vu dans le cours, concevoir et implémenter
 %début d'un encadré avec la couleur définie plus haut
 \begin{tcolorbox}[colframe=Monokaimagenta,colback=white]
 \paragraph{Registre à décalage 4 bits- Max 1 page } %démarre un paragraphe
+
 Insérez une capture d’écran pour présenter votre bloc Registre à décalage 4 bits (Structure interne).
 Accompagnez-le de commentaires et d’explications nécessaires à sa compréhension.
 Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\ 
-
+\paragraph Le registre à décalage 4 bits permet d'effectuer un décalage de tous les bits sur la droite ou sur la gauche. L'entrée D représente les bits qu'on veut pouvoir décaler.
+L'entrée S permet de choisir l'action à effectuer: \begin{itemize}
+\item 00: HOLD, la valeur reste inchangée
+\item 01: LOAD, la valeur est placée dans l'état voulu
+\item 10: shift left, les bits sont tous décalés d'un cran verfs la gauche
+\item 11: shift right, les bits sont tous décalés d'un cran vers la droite
+\end{itemize}
+\paragraph
+L'entrée CLK est l'horloge. Lorsque l'horloge passe à 1 (flanc montant), la valeur des bits dans les balances sont changées, et lorsqu'elle passe à 0, la valeur des bits est conservée.
+Ainsi, pout effectuer un décalage, il sera tout d'abord nécessaire de mettre l'entrée S à 1 et d'avoir un flanc montant pour que les bits des balances prennent la valeur de l'entrée D. Ensuite, on peut changer la valeur de l'entrée S dans le but d'avoir un décalage sur la droite ou sur la gauche. Dès lors, à chaque fois que l'horloge passera de 0 à 1, les bits vont tous se décaler d'un cran.
 %fin de l'encadré
 \end{tcolorbox}
 
+\section{Registre à décalage 8 bits}\
+Concevoir un registre à décalage de 8 bits en utilisant deux registres à décalage de 4 bits
+\begin{tcolorbox}[colframe=Monokaimagenta,colback=white]
+\paragraph{Registre à décalage 8 bits - Max 2 pages}
+\paragraph
+Insérez une capture d’écran pour présenter votre bloc Registre à décalage 8 bits (Structure interne).
+Accompagnez-le de commentaires et d’explications nécessaires à sa compréhension.
+Insérez une capture d’écran du chronogramme qui montre le chargement (Load) d’une valeur (exemple : 0x80), puis le décalage à droite de la valeur chargée (8 fois consécutif). 
+Accompagnez le chronogramme d’explications.
+Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\
+\end{tcolorbox}
 
+
+\section {Générateur de nombres aléatoires}
+Concevoir un générateur de nombres aléatoires à l’aide d’un registre LFSR (Linear Feedback Shift Register) 8-bits. Dans un registre LFSR Q+(n) = Q(n-1), n>1 et Q+(1) est la fonction XOR ou XNOR de plusieurs bits du registre. Notez que les bits du registre LFSR sont numérotés de 1 à n. Utilisez la documentation technique de Xilinx pour identifier les bits nécessaires pour calculer le bit Q+(1) et simuler le registre LFSR 8-bits à l’aide de Logisim.
+\begin{tcolorbox}[colframe=Monokaimagenta,colback=white]
+\paragraph{LFSR 8 bits - Max 2 pages} 
+\paragraph
+Insérez une capture d’écran pour présenter votre bloc LFSR 8 bits (Structure interne).
+Accompagnez-le de commentaires et d’explications nécessaires à sa compréhension.
+Insérez une capture d’écran du chronogramme qui comporte les 8 premières valeurs de la séquence (à partir de la valeur 0x00). 
+Accompagnez le chronogramme d’explications. 
+Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\
+\end{tcolorbox}
+
+\section {Modification du registre LFSR}
+Modifier le registre LFSR afin d’initialiser les flip-flops à ‘1’ (utilisez l‘entrée preset) et tester le fonctionnement du registre LFSR.
+\begin{tcolorbox}[colframe=Monokaimagenta,colback=white]
+\paragraph{Ajout preset LFSR - Max 1 page } 
+\paragraph
+Insérez une capture d’écran pour présenter votre bloc LFSR 8 bits (Structure interne).
+Accompagnez-le de commentaires et d’explications nécessaires à sa compréhension.
+Insérez une capture d’écran du chronogramme qui comporte les 8 premières valeurs de la séquence (à partir de la valeur 0x00). 
+Accompagnez le chronogramme d’explications. 
+Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\
+\end{tcolorbox}
     
+
+\section {Conclusion}
+Modifier le registre LFSR afin d’initialiser les flip-flops à ‘1’ (utilisez l‘entrée preset) et tester le fonctionnement du registre LFSR.
+\begin{tcolorbox}[colframe=Monokaimagenta,colback=white]
+\paragraph{Conclusion - Max 1/2 page} 
+\paragraph
+Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\
+\end{tcolorbox}
+
 \end{document}
