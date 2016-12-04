@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project integrity="fbfb1261f6b68fd4879c9a2dba81d205522f6b70" source="2.13.20.t" version="1.0">
+<project integrity="d0523ca6af229ed676e91d8af930356ac37b5298" source="2.13.20.t" version="1.0">
 This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -486,6 +486,7 @@ end TCL_Generic;
     <wire from="(380,390)" to="(460,390)"/>
     <wire from="(450,240)" to="(720,240)"/>
     <comp lib="0" loc="(220,370)" name="Pin">
+      <a name="label" val="CLR"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 17:46:05"/>
       <a name="version" val="2.13.20.t"/>
@@ -494,6 +495,7 @@ end TCL_Generic;
     </comp>
     <comp lib="0" loc="(210,220)" name="Pin">
       <a name="width" val="8"/>
+      <a name="label" val="D"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 17:17:31"/>
       <a name="version" val="2.13.20.t"/>
@@ -501,6 +503,7 @@ end TCL_Generic;
       <a name="integrity" val="31af76827ed10abef6c19479de7f44e74fdd2318"/>
     </comp>
     <comp lib="0" loc="(340,310)" name="Pin">
+      <a name="label" val="R"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 17:10:58"/>
       <a name="version" val="2.13.20.t"/>
@@ -535,6 +538,7 @@ end TCL_Generic;
     </comp>
     <comp lib="0" loc="(210,150)" name="Pin">
       <a name="width" val="2"/>
+      <a name="label" val="S"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 17:10:14"/>
       <a name="version" val="2.13.20.t"/>
@@ -552,6 +556,7 @@ end TCL_Generic;
       <a name="value" val="0x0"/>
     </comp>
     <comp lib="0" loc="(360,130)" name="Pin">
+      <a name="label" val="L"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 17:11:00"/>
       <a name="version" val="2.13.20.t"/>
@@ -560,6 +565,7 @@ end TCL_Generic;
     </comp>
     <comp loc="(590,90)" name="SHREGI_4BITS"/>
     <comp lib="0" loc="(210,190)" name="Clock">
+      <a name="label" val="CLK"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 17:10:04"/>
       <a name="version" val="2.13.20.t"/>
@@ -585,6 +591,7 @@ end TCL_Generic;
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
+      <a name="label" val="Q"/>
       <a name="labelloc" val="east"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 17:19:15"/>
@@ -1025,7 +1032,68 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 12"/>
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
-    <comp loc="(570,210)" name="SHREGI_8BITS"/>
+    <wire from="(170,120)" to="(200,120)"/>
+    <wire from="(140,100)" to="(170,100)"/>
+    <wire from="(170,100)" to="(200,100)"/>
+    <wire from="(140,130)" to="(200,130)"/>
+    <wire from="(180,70)" to="(180,80)"/>
+    <wire from="(180,80)" to="(200,80)"/>
+    <wire from="(180,70)" to="(200,70)"/>
+    <wire from="(390,160)" to="(500,160)"/>
+    <wire from="(200,100)" to="(210,100)"/>
+    <wire from="(170,100)" to="(170,120)"/>
+    <wire from="(140,70)" to="(180,70)"/>
+    <comp lib="4" loc="(200,50)" name="Counter"/>
+    <comp lib="0" loc="(140,300)" name="Clock">
+      <a name="label" val="sysclk"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:05:07"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="801f54a7-f63c-410d-bb9f-9822b0c00488"/>
+      <a name="integrity" val="89759b760653553507e31b499c16186db274dfce"/>
+    </comp>
+    <comp lib="0" loc="(500,180)" name="Constant"/>
+    <comp lib="0" loc="(500,120)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(140,130)" name="Clock">
+      <a name="label" val="CLK"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:04:33"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="21bce9a3-5398-4088-9e78-2e62acc8a449"/>
+      <a name="integrity" val="9641c25adae9e9aa9cdea1bb65a9975e7f591b90"/>
+    </comp>
+    <comp lib="0" loc="(140,70)" name="Pin">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:04:40"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="1c20b19e-c2f0-4804-a5e4-d2d63f278011"/>
+      <a name="integrity" val="e48499ab263e505b344d94973a05f255e4d5e35d"/>
+    </comp>
+    <comp loc="(630,120)" name="SHREGI_8BITS"/>
+    <comp lib="0" loc="(630,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:07:13"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="069d8d7b-5212-41b4-83c5-8e5679e623e3"/>
+      <a name="integrity" val="8800e7cb5cd9d0bf6c45dd4ef14fcbd4364e6772"/>
+    </comp>
+    <comp lib="0" loc="(140,100)" name="Pin">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:04:40"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="11f5740d-9257-486e-ac7e-889c7f1127bf"/>
+      <a name="integrity" val="5962080999179cf8d99531dd9cad5f6c9a0c777a"/>
+    </comp>
+    <comp lib="0" loc="(500,140)" name="Constant">
+      <a name="width" val="2"/>
+      <a name="value" val="0x2"/>
+    </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
       <a name="font" val="SansSerif plain 48"/>
