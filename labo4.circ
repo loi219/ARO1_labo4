@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project integrity="d0523ca6af229ed676e91d8af930356ac37b5298" source="2.13.20.t" version="1.0">
+<project integrity="95e46d025ea8caa71936bc22f7eafcd532d95980" source="2.13.20.t" version="1.0">
 This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -104,7 +104,7 @@ end TCL_Generic;
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <main name="SHREGI_4BITS"/>
+  <main name="CHRONO_SHREGI_8BITS"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -258,23 +258,6 @@ end TCL_Generic;
     <wire from="(530,560)" to="(530,610)"/>
     <wire from="(260,450)" to="(460,450)"/>
     <wire from="(930,370)" to="(930,610)"/>
-    <comp lib="4" loc="(660,360)" name="D Flip-Flop">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:17:58"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="10b4ebbd-4ba4-45c3-8b69-7d53efb8d37f"/>
-      <a name="integrity" val="1094bd612a6326ce9cf5f93f63ec57ded3945d30"/>
-    </comp>
-    <comp lib="2" loc="(840,270)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:17:31"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="f6f82a66-2419-4444-9d46-8bd063f4e1a6"/>
-      <a name="integrity" val="a52569294ad71324d3c77f130ce9ce606da4d73a"/>
-    </comp>
     <comp lib="0" loc="(550,630)" name="Splitter">
       <a name="facing" val="north"/>
       <a name="fanout" val="4"/>
@@ -285,62 +268,13 @@ end TCL_Generic;
       <a name="uuid" val="d554ba7c-b0a8-4535-9511-6ca961c7d3d8"/>
       <a name="integrity" val="6c0716e5b9a5b05cab24014787035df74b04ee0b"/>
     </comp>
-    <comp lib="4" loc="(240,360)" name="D Flip-Flop">
+    <comp lib="0" loc="(80,450)" name="Pin">
+      <a name="label" val="CLR"/>
       <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:17:58"/>
+      <a name="date" val="03.12.16 17:43:40"/>
       <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="212be936-7deb-4e20-b520-a5e0c101f2b7"/>
-      <a name="integrity" val="724c2db09c2574c353377b7f6bd817f2c49b46fb"/>
-    </comp>
-    <comp lib="4" loc="(860,360)" name="D Flip-Flop">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:17:58"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="630911ce-704e-4313-a134-65d33da26363"/>
-      <a name="integrity" val="50431320205f65f6485814c00a058569aad179ad"/>
-    </comp>
-    <comp lib="0" loc="(70,180)" name="Pin">
-      <a name="label" val="R"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 16:01:40"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="b1cc95e3-2425-4f4f-bc71-7768ebf14226"/>
-      <a name="integrity" val="b92cd1e15d8758d685502b29566a7ddc3dd4039d"/>
-    </comp>
-    <comp lib="2" loc="(210,270)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:17:31"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="fd1607ac-d7a2-485e-86c1-553d65649c1c"/>
-      <a name="integrity" val="cfadbd3b121bdaae650cb6e1b72ec3f92e493465"/>
-    </comp>
-    <comp lib="0" loc="(80,480)" name="Pin">
-      <a name="label" val="CLK"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:18:16"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="44b41c3f-2973-4e6a-9fb7-cecc63767775"/>
-      <a name="integrity" val="f71fab1062304e1c7dfdc911f841eed27b6eae14"/>
-    </comp>
-    <comp lib="4" loc="(440,360)" name="D Flip-Flop">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:17:58"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="6968c898-275e-4675-acf6-6900b142be89"/>
-      <a name="integrity" val="f1a5192fc32f2e5e2768b197c5855cc641cf533b"/>
-    </comp>
-    <comp lib="0" loc="(500,30)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="4"/>
-      <a name="label" val="D"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:07:57"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="3257286d-385b-4de7-852f-01500cee2e2b"/>
-      <a name="integrity" val="8847d5b97012099476725feb0787ec38b9a2c7d2"/>
+      <a name="uuid" val="5b0f704d-f40b-4ae5-970a-7a9886adc788"/>
+      <a name="integrity" val="2a3890cdbaa17e40e8b2232bded1bcd247c84215"/>
     </comp>
     <comp lib="2" loc="(420,270)" name="Multiplexer">
       <a name="facing" val="south"/>
@@ -351,52 +285,6 @@ end TCL_Generic;
       <a name="version" val="2.13.20.t"/>
       <a name="uuid" val="47221b20-6304-444e-b0b5-75fb76334fda"/>
       <a name="integrity" val="ddcc6873a1bea7dd8c94fe58361743217e243c4e"/>
-    </comp>
-    <comp lib="2" loc="(630,270)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:17:31"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="9c6a93d0-feba-4dd8-8512-32d8d99f7039"/>
-      <a name="integrity" val="7255dbfb1ac9492dd956bbd813e700a976aea43b"/>
-    </comp>
-    <comp lib="0" loc="(970,180)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="label" val="L"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:20:51"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="068f5cf6-4dec-4ef6-a6e1-3452cc994063"/>
-      <a name="integrity" val="9f8a6fd3c78ee29b43d0a073c2efd1b592ca7ee6"/>
-    </comp>
-    <comp lib="0" loc="(500,60)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:08:07"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="79834c38-c610-4290-b586-4e79d634602e"/>
-      <a name="integrity" val="9d8f18f0698c64e660a46e3b5f02f89920405a3c"/>
-    </comp>
-    <comp lib="0" loc="(80,450)" name="Pin">
-      <a name="label" val="CLR"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:43:40"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="5b0f704d-f40b-4ae5-970a-7a9886adc788"/>
-      <a name="integrity" val="2a3890cdbaa17e40e8b2232bded1bcd247c84215"/>
-    </comp>
-    <comp lib="0" loc="(70,250)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="label" val="S"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 15:36:10"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="e6e9a516-1157-4815-8be1-d79b75cfbd4b"/>
-      <a name="integrity" val="c5fa2dd61e118e3a1ea6da4fb57883851d770d9b"/>
     </comp>
     <comp lib="0" loc="(590,630)" name="Pin">
       <a name="facing" val="west"/>
@@ -409,6 +297,118 @@ end TCL_Generic;
       <a name="version" val="2.13.20.t"/>
       <a name="uuid" val="a299f959-1eca-48d1-8706-ea95f504cdac"/>
       <a name="integrity" val="ba6717d4d08b146b33e0f61b0d2d387d0a74238e"/>
+    </comp>
+    <comp lib="2" loc="(840,270)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:17:31"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="f6f82a66-2419-4444-9d46-8bd063f4e1a6"/>
+      <a name="integrity" val="a52569294ad71324d3c77f130ce9ce606da4d73a"/>
+    </comp>
+    <comp lib="0" loc="(80,480)" name="Pin">
+      <a name="label" val="CLK"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:18:16"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="44b41c3f-2973-4e6a-9fb7-cecc63767775"/>
+      <a name="integrity" val="f71fab1062304e1c7dfdc911f841eed27b6eae14"/>
+    </comp>
+    <comp lib="0" loc="(500,30)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="4"/>
+      <a name="label" val="D"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 17:07:57"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="3257286d-385b-4de7-852f-01500cee2e2b"/>
+      <a name="integrity" val="8847d5b97012099476725feb0787ec38b9a2c7d2"/>
+    </comp>
+    <comp lib="4" loc="(240,360)" name="D Flip-Flop">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:17:58"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="212be936-7deb-4e20-b520-a5e0c101f2b7"/>
+      <a name="integrity" val="724c2db09c2574c353377b7f6bd817f2c49b46fb"/>
+    </comp>
+    <comp lib="4" loc="(440,360)" name="D Flip-Flop">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:17:58"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="6968c898-275e-4675-acf6-6900b142be89"/>
+      <a name="integrity" val="f1a5192fc32f2e5e2768b197c5855cc641cf533b"/>
+    </comp>
+    <comp lib="0" loc="(70,180)" name="Pin">
+      <a name="label" val="R"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 16:01:40"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="b1cc95e3-2425-4f4f-bc71-7768ebf14226"/>
+      <a name="integrity" val="b92cd1e15d8758d685502b29566a7ddc3dd4039d"/>
+    </comp>
+    <comp lib="0" loc="(70,250)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="label" val="S"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:36:10"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="e6e9a516-1157-4815-8be1-d79b75cfbd4b"/>
+      <a name="integrity" val="c5fa2dd61e118e3a1ea6da4fb57883851d770d9b"/>
+    </comp>
+    <comp lib="2" loc="(210,270)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:17:31"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="fd1607ac-d7a2-485e-86c1-553d65649c1c"/>
+      <a name="integrity" val="cfadbd3b121bdaae650cb6e1b72ec3f92e493465"/>
+    </comp>
+    <comp lib="2" loc="(630,270)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:17:31"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="9c6a93d0-feba-4dd8-8512-32d8d99f7039"/>
+      <a name="integrity" val="7255dbfb1ac9492dd956bbd813e700a976aea43b"/>
+    </comp>
+    <comp lib="4" loc="(660,360)" name="D Flip-Flop">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:17:58"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="10b4ebbd-4ba4-45c3-8b69-7d53efb8d37f"/>
+      <a name="integrity" val="1094bd612a6326ce9cf5f93f63ec57ded3945d30"/>
+    </comp>
+    <comp lib="0" loc="(500,60)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 17:08:07"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="79834c38-c610-4290-b586-4e79d634602e"/>
+      <a name="integrity" val="9d8f18f0698c64e660a46e3b5f02f89920405a3c"/>
+    </comp>
+    <comp lib="0" loc="(970,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="label" val="L"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:20:51"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="068f5cf6-4dec-4ef6-a6e1-3452cc994063"/>
+      <a name="integrity" val="9f8a6fd3c78ee29b43d0a073c2efd1b592ca7ee6"/>
+    </comp>
+    <comp lib="4" loc="(860,360)" name="D Flip-Flop">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 15:17:58"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="630911ce-704e-4313-a134-65d33da26363"/>
+      <a name="integrity" val="50431320205f65f6485814c00a058569aad179ad"/>
     </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
@@ -444,15 +444,25 @@ end TCL_Generic;
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(650,150)" to="(650,290)"/>
+    <wire from="(590,90)" to="(770,90)"/>
     <wire from="(300,170)" to="(300,370)"/>
     <wire from="(380,190)" to="(380,390)"/>
+    <wire from="(590,290)" to="(650,290)"/>
+    <wire from="(340,310)" to="(460,310)"/>
+    <wire from="(430,150)" to="(430,350)"/>
     <wire from="(800,120)" to="(800,150)"/>
     <wire from="(760,150)" to="(800,150)"/>
+    <wire from="(820,100)" to="(860,100)"/>
     <wire from="(210,190)" to="(380,190)"/>
+    <wire from="(430,30)" to="(430,110)"/>
     <wire from="(430,30)" to="(720,30)"/>
+    <wire from="(800,90)" to="(800,110)"/>
+    <wire from="(360,130)" to="(460,130)"/>
+    <wire from="(650,150)" to="(760,150)"/>
     <wire from="(450,240)" to="(450,330)"/>
     <wire from="(770,90)" to="(770,240)"/>
     <wire from="(730,250)" to="(730,270)"/>
+    <wire from="(730,40)" to="(730,60)"/>
     <wire from="(300,370)" to="(460,370)"/>
     <wire from="(430,150)" to="(460,150)"/>
     <wire from="(430,350)" to="(460,350)"/>
@@ -460,31 +470,21 @@ end TCL_Generic;
     <wire from="(430,110)" to="(460,110)"/>
     <wire from="(210,150)" to="(430,150)"/>
     <wire from="(750,240)" to="(770,240)"/>
+    <wire from="(240,90)" to="(460,90)"/>
     <wire from="(770,90)" to="(800,90)"/>
+    <wire from="(320,210)" to="(320,250)"/>
     <wire from="(240,90)" to="(240,200)"/>
+    <wire from="(460,250)" to="(460,290)"/>
     <wire from="(450,330)" to="(460,330)"/>
     <wire from="(320,250)" to="(460,250)"/>
     <wire from="(760,30)" to="(760,150)"/>
-    <wire from="(750,30)" to="(760,30)"/>
-    <wire from="(590,90)" to="(770,90)"/>
-    <wire from="(590,290)" to="(650,290)"/>
-    <wire from="(340,310)" to="(460,310)"/>
-    <wire from="(430,150)" to="(430,350)"/>
-    <wire from="(820,100)" to="(860,100)"/>
-    <wire from="(430,30)" to="(430,110)"/>
-    <wire from="(800,90)" to="(800,110)"/>
-    <wire from="(360,130)" to="(460,130)"/>
-    <wire from="(650,150)" to="(760,150)"/>
-    <wire from="(730,40)" to="(730,60)"/>
-    <wire from="(240,90)" to="(460,90)"/>
-    <wire from="(320,210)" to="(320,250)"/>
-    <wire from="(460,250)" to="(460,290)"/>
     <wire from="(240,210)" to="(320,210)"/>
     <wire from="(220,370)" to="(300,370)"/>
     <wire from="(210,220)" to="(220,220)"/>
     <wire from="(380,190)" to="(460,190)"/>
     <wire from="(380,390)" to="(460,390)"/>
     <wire from="(450,240)" to="(720,240)"/>
+    <wire from="(750,30)" to="(760,30)"/>
     <comp lib="0" loc="(220,370)" name="Pin">
       <a name="label" val="CLR"/>
       <a name="owner" val="sven_rouvinez"/>
@@ -502,14 +502,6 @@ end TCL_Generic;
       <a name="uuid" val="4c169286-6cba-4705-b5af-2d229741e3d8"/>
       <a name="integrity" val="31af76827ed10abef6c19479de7f44e74fdd2318"/>
     </comp>
-    <comp lib="0" loc="(340,310)" name="Pin">
-      <a name="label" val="R"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:10:58"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="832a73fd-47ed-4b75-a749-6bcac11cd334"/>
-      <a name="integrity" val="1d67ee3031dad20ebd6086ee8ab34fd9e1d33d84"/>
-    </comp>
     <comp lib="2" loc="(720,240)" name="BitSelector">
       <a name="facing" val="west"/>
       <a name="width" val="4"/>
@@ -518,74 +510,6 @@ end TCL_Generic;
       <a name="version" val="2.13.20.t"/>
       <a name="uuid" val="c2dbe9f2-5d1f-449d-b21f-b9c17ae0bdab"/>
       <a name="integrity" val="11f540319f206637a85ad1924794883b36f9acc3"/>
-    </comp>
-    <comp loc="(590,290)" name="SHREGI_4BITS"/>
-    <comp lib="0" loc="(820,100)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="incoming" val="8"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:18:59"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="22814c12-a885-4660-a920-e3198d62d05f"/>
-      <a name="integrity" val="3e2cacf76d21546cf21ce792b44d46772a28b47c"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="1"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="1"/>
-    </comp>
-    <comp lib="0" loc="(210,150)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="label" val="S"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:10:14"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="ea2f9651-4179-4d18-a767-31834a3976b9"/>
-      <a name="integrity" val="ab909f197874e1a811d5d3dfd904034086e2877a"/>
-    </comp>
-    <comp lib="0" loc="(730,270)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x3"/>
-    </comp>
-    <comp lib="0" loc="(730,60)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(360,130)" name="Pin">
-      <a name="label" val="L"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:11:00"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="985db793-7d85-4d26-8153-0f4d106133f4"/>
-      <a name="integrity" val="d22108a035ecd0aabb64f693a554ef455957ee3d"/>
-    </comp>
-    <comp loc="(590,90)" name="SHREGI_4BITS"/>
-    <comp lib="0" loc="(210,190)" name="Clock">
-      <a name="label" val="CLK"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:10:04"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="6bb0a7cb-fa70-4cf1-9e2e-bcbf0f6080e9"/>
-      <a name="integrity" val="a1917c074db59c164c5c00e486fab6ef10c74cae"/>
-    </comp>
-    <comp lib="0" loc="(220,220)" name="Splitter">
-      <a name="incoming" val="8"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 17:18:14"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="0b726f75-7916-4597-b5b5-e13a329e088a"/>
-      <a name="integrity" val="c4de07a7e94535fea2a9c083bf371977c2b97e40"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="1"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="1"/>
     </comp>
     <comp lib="0" loc="(860,100)" name="Pin">
       <a name="facing" val="west"/>
@@ -607,6 +531,82 @@ end TCL_Generic;
       <a name="version" val="2.13.20.t"/>
       <a name="uuid" val="3c088a6b-6a98-49f1-bf9f-986e69e6b1d0"/>
       <a name="integrity" val="6aa4a293123a6e3873b9e09b44a4ddb3af0329dc"/>
+    </comp>
+    <comp lib="0" loc="(340,310)" name="Pin">
+      <a name="label" val="R"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 17:10:58"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="832a73fd-47ed-4b75-a749-6bcac11cd334"/>
+      <a name="integrity" val="1d67ee3031dad20ebd6086ee8ab34fd9e1d33d84"/>
+    </comp>
+    <comp lib="0" loc="(210,190)" name="Clock">
+      <a name="label" val="CLK"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 17:10:04"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="6bb0a7cb-fa70-4cf1-9e2e-bcbf0f6080e9"/>
+      <a name="integrity" val="a1917c074db59c164c5c00e486fab6ef10c74cae"/>
+    </comp>
+    <comp lib="0" loc="(820,100)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="incoming" val="8"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 17:18:59"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="22814c12-a885-4660-a920-e3198d62d05f"/>
+      <a name="integrity" val="3e2cacf76d21546cf21ce792b44d46772a28b47c"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+    </comp>
+    <comp loc="(590,290)" name="SHREGI_4BITS"/>
+    <comp lib="0" loc="(210,150)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="label" val="S"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 17:10:14"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="ea2f9651-4179-4d18-a767-31834a3976b9"/>
+      <a name="integrity" val="ab909f197874e1a811d5d3dfd904034086e2877a"/>
+    </comp>
+    <comp lib="0" loc="(730,270)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x3"/>
+    </comp>
+    <comp lib="0" loc="(220,220)" name="Splitter">
+      <a name="incoming" val="8"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 17:18:14"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="0b726f75-7916-4597-b5b5-e13a329e088a"/>
+      <a name="integrity" val="c4de07a7e94535fea2a9c083bf371977c2b97e40"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+    </comp>
+    <comp lib="0" loc="(730,60)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp loc="(590,90)" name="SHREGI_4BITS"/>
+    <comp lib="0" loc="(360,130)" name="Pin">
+      <a name="label" val="L"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 17:11:00"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="985db793-7d85-4d26-8153-0f4d106133f4"/>
+      <a name="integrity" val="d22108a035ecd0aabb64f693a554ef455957ee3d"/>
     </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
@@ -728,61 +728,6 @@ end TCL_Generic;
     <wire from="(750,340)" to="(760,340)"/>
     <wire from="(860,570)" to="(860,620)"/>
     <wire from="(600,510)" to="(610,510)"/>
-    <comp lib="0" loc="(910,640)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Q1"/>
-      <a name="labelloc" val="east"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:51:02"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="f57ee220-1f12-48c0-89fc-c1fb124e8bcd"/>
-      <a name="integrity" val="0a12d0d1e518610de62c3d845d262cfa358c4c0f"/>
-    </comp>
-    <comp lib="1" loc="(600,140)" name="XNOR Gate">
-      <a name="facing" val="west"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:08:02"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="edece54d-1137-449a-9b63-023c3a5d1bca"/>
-      <a name="integrity" val="2c5457b0c1d531464e8bea7c49dfa0f5ad926b7b"/>
-    </comp>
-    <comp lib="1" loc="(330,180)" name="XNOR Gate">
-      <a name="facing" val="west"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:08:02"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="4ae43ceb-0b93-423c-bc08-5fba0625822d"/>
-      <a name="integrity" val="a0fcfe548610a9f11f5959ccccfa66dd28b0512c"/>
-    </comp>
-    <comp lib="0" loc="(660,630)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Q0"/>
-      <a name="labelloc" val="east"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:51:02"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="ff3bcb89-84c6-4df1-b519-9d0a9529d871"/>
-      <a name="integrity" val="50ba86e7c3858885e2dc9a72d4a6c0042dc2e67a"/>
-    </comp>
-    <comp lib="4" loc="(810,330)" name="D Flip-Flop">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:08:53"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="6323c444-9266-4888-98c7-a997594f2f66"/>
-      <a name="integrity" val="219d3aaead68d46f29d17d3135e1fbd892b8c4f5"/>
-    </comp>
-    <comp lib="0" loc="(120,310)" name="Pin">
-      <a name="label" val="PR"/>
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:50:33"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="a3e9d150-226d-4db5-8984-d428b3b5799a"/>
-      <a name="integrity" val="97b570fb0d81485621f170bc4712b654841b334c"/>
-    </comp>
     <comp lib="0" loc="(640,630)" name="Splitter">
       <a name="facing" val="north"/>
       <a name="fanout" val="4"/>
@@ -793,20 +738,6 @@ end TCL_Generic;
       <a name="uuid" val="9a8623d3-940b-47ef-ba5b-f1c37025cb1a"/>
       <a name="integrity" val="ffb6379b5e2a05d8becb47aed824a642fec41188"/>
     </comp>
-    <comp lib="4" loc="(1060,330)" name="D Flip-Flop">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:08:53"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="dbcc7fa7-48b5-4d79-9e6d-f65d5d2a73e9"/>
-      <a name="integrity" val="fc3eaa362dcde57516cef89927ee59222f001763"/>
-    </comp>
-    <comp lib="4" loc="(170,330)" name="D Flip-Flop">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:08:53"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="39368bfa-a4c0-46cf-b678-7810200aa2f5"/>
-      <a name="integrity" val="0f256bf4f587a582227cdf9538e1e8e5e4e91d8e"/>
-    </comp>
     <comp lib="4" loc="(940,330)" name="D Flip-Flop">
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 18:08:53"/>
@@ -814,20 +745,13 @@ end TCL_Generic;
       <a name="uuid" val="df0b9831-d8f2-4828-a7ef-1fd62382b741"/>
       <a name="integrity" val="14c9cf92184cdfa57c21ae3e49d48f34f5b11dc7"/>
     </comp>
-    <comp lib="4" loc="(430,330)" name="D Flip-Flop">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:08:53"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="809cfed2-1aee-46d2-b4b9-c025299e6261"/>
-      <a name="integrity" val="5f9a631e43fafb5e35e95101146b77c70667fc77"/>
-    </comp>
-    <comp lib="1" loc="(470,160)" name="XNOR Gate">
+    <comp lib="1" loc="(600,140)" name="XNOR Gate">
       <a name="facing" val="west"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 18:08:02"/>
       <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="07e50c1d-20fa-4f09-b913-f04ca2b9e8f7"/>
-      <a name="integrity" val="ae461fe5fd071047150fd380de390ef78656be6c"/>
+      <a name="uuid" val="edece54d-1137-449a-9b63-023c3a5d1bca"/>
+      <a name="integrity" val="2c5457b0c1d531464e8bea7c49dfa0f5ad926b7b"/>
     </comp>
     <comp lib="4" loc="(680,330)" name="D Flip-Flop">
       <a name="owner" val="sven_rouvinez"/>
@@ -836,22 +760,30 @@ end TCL_Generic;
       <a name="uuid" val="064423f8-1b38-4342-b8de-5181ac20d535"/>
       <a name="integrity" val="b13e712cedfc6015d552d698873e3bd7769dd67a"/>
     </comp>
-    <comp lib="0" loc="(120,430)" name="Pin">
-      <a name="label" val="CLK"/>
+    <comp lib="1" loc="(330,180)" name="XNOR Gate">
+      <a name="facing" val="west"/>
       <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:53:40"/>
+      <a name="date" val="03.12.16 18:08:02"/>
       <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="0db7df8a-ed05-4d11-9732-f53cbe426202"/>
-      <a name="integrity" val="040bcd20df531ba6f3027d7c21c060390634d6f9"/>
+      <a name="uuid" val="4ae43ceb-0b93-423c-bc08-5fba0625822d"/>
+      <a name="integrity" val="a0fcfe548610a9f11f5959ccccfa66dd28b0512c"/>
     </comp>
-    <comp lib="4" loc="(300,330)" name="D Flip-Flop">
+    <comp lib="4" loc="(170,330)" name="D Flip-Flop">
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 18:08:53"/>
       <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="809cfed2-1aee-46d2-b4b9-c025299e6261"/>
-      <a name="integrity" val="5f9a631e43fafb5e35e95101146b77c70667fc77"/>
+      <a name="uuid" val="39368bfa-a4c0-46cf-b678-7810200aa2f5"/>
+      <a name="integrity" val="0f256bf4f587a582227cdf9538e1e8e5e4e91d8e"/>
     </comp>
-    <comp lib="4" loc="(550,330)" name="D Flip-Flop">
+    <comp lib="0" loc="(120,310)" name="Pin">
+      <a name="label" val="PR"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:50:33"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="a3e9d150-226d-4db5-8984-d428b3b5799a"/>
+      <a name="integrity" val="97b570fb0d81485621f170bc4712b654841b334c"/>
+    </comp>
+    <comp lib="4" loc="(300,330)" name="D Flip-Flop">
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 18:08:53"/>
       <a name="version" val="2.13.20.t"/>
@@ -867,6 +799,74 @@ end TCL_Generic;
       <a name="version" val="2.13.20.t"/>
       <a name="uuid" val="495e5f81-196a-4fab-bf0d-932af7251621"/>
       <a name="integrity" val="dcffcca6499d2ecb44f963934d37c605687f5e77"/>
+    </comp>
+    <comp lib="0" loc="(660,630)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Q0"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:51:02"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="ff3bcb89-84c6-4df1-b519-9d0a9529d871"/>
+      <a name="integrity" val="50ba86e7c3858885e2dc9a72d4a6c0042dc2e67a"/>
+    </comp>
+    <comp lib="0" loc="(910,640)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Q1"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:51:02"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="f57ee220-1f12-48c0-89fc-c1fb124e8bcd"/>
+      <a name="integrity" val="0a12d0d1e518610de62c3d845d262cfa358c4c0f"/>
+    </comp>
+    <comp lib="4" loc="(1060,330)" name="D Flip-Flop">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:08:53"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="dbcc7fa7-48b5-4d79-9e6d-f65d5d2a73e9"/>
+      <a name="integrity" val="fc3eaa362dcde57516cef89927ee59222f001763"/>
+    </comp>
+    <comp lib="4" loc="(810,330)" name="D Flip-Flop">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:08:53"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="6323c444-9266-4888-98c7-a997594f2f66"/>
+      <a name="integrity" val="219d3aaead68d46f29d17d3135e1fbd892b8c4f5"/>
+    </comp>
+    <comp lib="0" loc="(120,430)" name="Pin">
+      <a name="label" val="CLK"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:53:40"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="0db7df8a-ed05-4d11-9732-f53cbe426202"/>
+      <a name="integrity" val="040bcd20df531ba6f3027d7c21c060390634d6f9"/>
+    </comp>
+    <comp lib="4" loc="(430,330)" name="D Flip-Flop">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:08:53"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="809cfed2-1aee-46d2-b4b9-c025299e6261"/>
+      <a name="integrity" val="5f9a631e43fafb5e35e95101146b77c70667fc77"/>
+    </comp>
+    <comp lib="4" loc="(550,330)" name="D Flip-Flop">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:08:53"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="809cfed2-1aee-46d2-b4b9-c025299e6261"/>
+      <a name="integrity" val="5f9a631e43fafb5e35e95101146b77c70667fc77"/>
+    </comp>
+    <comp lib="1" loc="(470,160)" name="XNOR Gate">
+      <a name="facing" val="west"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:08:02"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="07e50c1d-20fa-4f09-b913-f04ca2b9e8f7"/>
+      <a name="integrity" val="ae461fe5fd071047150fd380de390ef78656be6c"/>
     </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
@@ -914,14 +914,6 @@ end TCL_Generic;
       <a name="uuid" val="95f4f223-859e-4113-b699-718a0a6e1814"/>
       <a name="integrity" val="5343bb3456c61ec282ce5091ecd5833afea1dfab"/>
     </comp>
-    <comp loc="(520,210)" name="LFSR_8BITS"/>
-    <comp lib="0" loc="(310,230)" name="Clock">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="03.12.16 18:54:00"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="82dca189-9539-4133-aa93-22fcd894c4aa"/>
-      <a name="integrity" val="0ba31c1c4a6d1c3dc45c7fbec401645f2f7ea350"/>
-    </comp>
     <comp lib="0" loc="(310,210)" name="Pin">
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 18:53:33"/>
@@ -936,6 +928,14 @@ end TCL_Generic;
       <a name="uuid" val="28100330-62b5-4f46-80dc-4ba01e626895"/>
       <a name="integrity" val="bb10ed0c9cfddf84c78d217a17764e12069ea332"/>
     </comp>
+    <comp lib="0" loc="(310,230)" name="Clock">
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="03.12.16 18:54:00"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="82dca189-9539-4133-aa93-22fcd894c4aa"/>
+      <a name="integrity" val="0ba31c1c4a6d1c3dc45c7fbec401645f2f7ea350"/>
+    </comp>
+    <comp loc="(520,210)" name="LFSR_8BITS"/>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
       <a name="font" val="SansSerif plain 48"/>
@@ -976,8 +976,6 @@ end TCL_Generic;
     <wire from="(310,230)" to="(410,230)"/>
     <wire from="(520,230)" to="(600,230)"/>
     <wire from="(520,210)" to="(560,210)"/>
-    <comp lib="0" loc="(320,210)" name="Constant"/>
-    <comp loc="(520,210)" name="LFSR_8BITS"/>
     <comp lib="0" loc="(310,230)" name="Clock">
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 18:54:00"/>
@@ -992,6 +990,8 @@ end TCL_Generic;
       <a name="uuid" val="0caaa471-aaa1-4192-aacb-d68431555fd9"/>
       <a name="integrity" val="a07868e8678d9fededfee71399435ceafa9071f0"/>
     </comp>
+    <comp lib="0" loc="(320,210)" name="Constant"/>
+    <comp loc="(520,210)" name="LFSR_8BITS"/>
     <comp lib="5" loc="(600,170)" name="Hex Digit Display">
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="03.12.16 18:54:12"/>
@@ -1035,15 +1035,19 @@ end TCL_Generic;
     <wire from="(170,120)" to="(200,120)"/>
     <wire from="(140,100)" to="(170,100)"/>
     <wire from="(170,100)" to="(200,100)"/>
-    <wire from="(140,130)" to="(200,130)"/>
-    <wire from="(180,70)" to="(180,80)"/>
-    <wire from="(180,80)" to="(200,80)"/>
-    <wire from="(180,70)" to="(200,70)"/>
     <wire from="(390,160)" to="(500,160)"/>
     <wire from="(200,100)" to="(210,100)"/>
+    <wire from="(140,130)" to="(200,130)"/>
     <wire from="(170,100)" to="(170,120)"/>
+    <wire from="(180,70)" to="(180,80)"/>
     <wire from="(140,70)" to="(180,70)"/>
+    <wire from="(180,80)" to="(200,80)"/>
+    <wire from="(180,70)" to="(200,70)"/>
     <comp lib="4" loc="(200,50)" name="Counter"/>
+    <comp lib="0" loc="(500,180)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(140,100)" name="Constant"/>
     <comp lib="0" loc="(140,300)" name="Clock">
       <a name="label" val="sysclk"/>
       <a name="owner" val="sven_rouvinez"/>
@@ -1052,10 +1056,8 @@ end TCL_Generic;
       <a name="uuid" val="801f54a7-f63c-410d-bb9f-9822b0c00488"/>
       <a name="integrity" val="89759b760653553507e31b499c16186db274dfce"/>
     </comp>
-    <comp lib="0" loc="(500,180)" name="Constant"/>
-    <comp lib="0" loc="(500,120)" name="Constant">
-      <a name="value" val="0x0"/>
-    </comp>
+    <comp lib="0" loc="(500,120)" name="Constant"/>
+    <comp loc="(630,120)" name="SHREGI_8BITS"/>
     <comp lib="0" loc="(140,130)" name="Clock">
       <a name="label" val="CLK"/>
       <a name="owner" val="sven_rouvinez"/>
@@ -1064,18 +1066,11 @@ end TCL_Generic;
       <a name="uuid" val="21bce9a3-5398-4088-9e78-2e62acc8a449"/>
       <a name="integrity" val="9641c25adae9e9aa9cdea1bb65a9975e7f591b90"/>
     </comp>
-    <comp lib="0" loc="(140,70)" name="Pin">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="04.12.16 14:04:40"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="1c20b19e-c2f0-4804-a5e4-d2d63f278011"/>
-      <a name="integrity" val="e48499ab263e505b344d94973a05f255e4d5e35d"/>
-    </comp>
-    <comp loc="(630,120)" name="SHREGI_8BITS"/>
     <comp lib="0" loc="(630,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
+      <a name="label" val="Q"/>
       <a name="labelloc" val="east"/>
       <a name="owner" val="sven_rouvinez"/>
       <a name="date" val="04.12.16 14:07:13"/>
@@ -1083,16 +1078,112 @@ end TCL_Generic;
       <a name="uuid" val="069d8d7b-5212-41b4-83c5-8e5679e623e3"/>
       <a name="integrity" val="8800e7cb5cd9d0bf6c45dd4ef14fcbd4364e6772"/>
     </comp>
-    <comp lib="0" loc="(140,100)" name="Pin">
-      <a name="owner" val="sven_rouvinez"/>
-      <a name="date" val="04.12.16 14:04:40"/>
-      <a name="version" val="2.13.20.t"/>
-      <a name="uuid" val="11f5740d-9257-486e-ac7e-889c7f1127bf"/>
-      <a name="integrity" val="5962080999179cf8d99531dd9cad5f6c9a0c777a"/>
-    </comp>
     <comp lib="0" loc="(500,140)" name="Constant">
       <a name="width" val="2"/>
       <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="0" loc="(140,70)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
+      <a name="text" val="Attention, votre version de Logisim"/>
+      <a name="font" val="SansSerif plain 48"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="7" loc="(4,100)" name="Text" trackercomp="true">
+      <a name="text" val="ne contient pas de tracker. Si vous"/>
+      <a name="font" val="SansSerif plain 48"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="7" loc="(4,150)" name="Text" trackercomp="true">
+      <a name="text" val="enregistrez votre projet, toutes les"/>
+      <a name="font" val="SansSerif plain 48"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="7" loc="(4,200)" name="Text" trackercomp="true">
+      <a name="text" val="informations du tracker seront"/>
+      <a name="font" val="SansSerif plain 48"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="7" loc="(4,250)" name="Text" trackercomp="true">
+      <a name="text" val="définitivement effacées."/>
+      <a name="font" val="SansSerif plain 48"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+  <circuit name="CHRONO_LFSR_8BITS">
+    <a name="circuit" val="CHRONO_LFSR_8BITS"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
+    <a name="circuitnamedbox" val="true"/>
+    <a name="circuitvhdlpath" val=""/>
+    <wire from="(570,180)" to="(570,190)"/>
+    <wire from="(120,100)" to="(150,100)"/>
+    <wire from="(120,90)" to="(150,90)"/>
+    <wire from="(100,120)" to="(130,120)"/>
+    <wire from="(570,180)" to="(590,180)"/>
+    <wire from="(90,150)" to="(150,150)"/>
+    <wire from="(540,170)" to="(590,170)"/>
+    <wire from="(540,190)" to="(570,190)"/>
+    <wire from="(120,90)" to="(120,100)"/>
+    <wire from="(100,90)" to="(120,90)"/>
+    <wire from="(130,120)" to="(150,120)"/>
+    <wire from="(130,140)" to="(150,140)"/>
+    <wire from="(610,160)" to="(650,160)"/>
+    <wire from="(130,120)" to="(130,140)"/>
+    <wire from="(330,190)" to="(430,190)"/>
+    <comp lib="0" loc="(650,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:15:23"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="61f882b8-8c06-4b17-a238-990ea291876e"/>
+      <a name="integrity" val="76d57db239e5d0aacb3b30071656645862448ad7"/>
+    </comp>
+    <comp lib="0" loc="(100,90)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(610,160)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="incoming" val="8"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:14:49"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="e98f31d3-d095-4cb7-a44f-d793d35f3c25"/>
+      <a name="integrity" val="628837d2a7b9da23e0a0925bc54780062085990a"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+    </comp>
+    <comp lib="4" loc="(150,70)" name="Counter">
+      <a name="width" val="1"/>
+      <a name="max" val="0x1"/>
+    </comp>
+    <comp loc="(540,170)" name="LFSR_8BITS"/>
+    <comp lib="0" loc="(100,120)" name="Constant"/>
+    <comp lib="0" loc="(90,150)" name="Clock">
+      <a name="label" val="CLK"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:13:41"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="62c43e20-7b52-4ccc-907b-aa8de1f6b49a"/>
+      <a name="integrity" val="6acf5cc61aa2adea0d964a59fea40641ca95432b"/>
+    </comp>
+    <comp lib="0" loc="(90,230)" name="Clock">
+      <a name="label" val="sysclk"/>
+      <a name="owner" val="sven_rouvinez"/>
+      <a name="date" val="04.12.16 14:13:41"/>
+      <a name="version" val="2.13.20.t"/>
+      <a name="uuid" val="f47042b2-f592-4c24-8ab9-00852b382d31"/>
+      <a name="integrity" val="f52183c5ef40b24133e961e3320d2044bb79034f"/>
     </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
