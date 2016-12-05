@@ -109,6 +109,11 @@ Accompagnez-le de commentaires et d’explications nécessaires à sa compréhen
 Insérez une capture d’écran du chronogramme qui montre le chargement (Load) d’une valeur (exemple : 0x80), puis le décalage à droite de la valeur chargée (8 fois consécutif). 
 Accompagnez le chronogramme d’explications.
 Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\
+\paragraph
+Le shift register 8 bits est composé de 2 shift register 4 bits.  Ils ont comme entrée en commun l'horloge CK, S qui détermine l'action à effectuer, ainsi que le reset. L'octet est séparé en deux nibbles qui sont chacun en entrée D des register 4 bits.
+Lorsqu'un décalage est fait, le dernier bit d'un register doit être récupéré par le suivant, afin de ne pas perdre les bits décalés. Ainsi, pour le décalage à gauche, le bit [0] du shift register prenant en entrée D les bits [7:4] de l'octet (le SHREG\_I2 de l'illustration), doit être passé en entrée R de l'autre shift register (SHREGI\_1). Ainsi, au moment du décalage à gauche, le bit [0] du SHREGI\_2 va bien être passé au SHREGI\_1 et il y aura une continuité dans le décalage.
+Le même principe est appliqué pour le décalage à droite, mais cette fois c'est le bit [3] du SHREGI\_1 qui va être donné en entrée L du SHREGI\_2.
+\\
 \end{tcolorbox}
 
 
