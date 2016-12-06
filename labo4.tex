@@ -75,12 +75,14 @@ Sur la base du registre à décalage vu dans le cours, concevoir et implémenter
 Insérez une capture d’écran pour présenter votre bloc Registre à décalage 4 bits (Structure interne).
 Accompagnez-le de commentaires et d’explications nécessaires à sa compréhension.
 Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\ 
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{src/SHREGI_4BITS.png}
-    \captionof{figure}{Bloc SHIFT REGISTER 4 bits}
+    \captionof{figure}{Bloc SHIFT REGISTER}
     \label{fig:SHREGI_4}
 \end{figure}
+
 Le registre à décalage 4 bits permet d'effectuer un décalage de tous les bits sur la droite ou sur la gauche. L'entrée \textbf{D} représente les bits qu'on veut pouvoir décaler.
 L'entrée \textbf{S} permet de choisir l'action à effectuer: 
 \begin{itemize}
@@ -155,6 +157,7 @@ Accompagnez-le de commentaires et d’explications nécessaires à sa compréhen
 Insérez une capture d’écran du chronogramme qui comporte les 8 premières valeurs de la séquence (à partir de la valeur 0x00). 
 Accompagnez le chronogramme d’explications. 
 Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge)\\
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=.8\textwidth]{src/LSFR_8BITS.png}
@@ -164,8 +167,10 @@ Remplacez le texte ci-dessus par vos réponses (à l’intérieur du cadre rouge
 \paragraph
 Le bloc LSFR permet de générerer une suite de nombre pseudo-aléatoire. En entrée, la clock qui va permettre de changer l'état des bascules bistables présentes dans le circuit. À chaque flanc montant, tous les bits vont être décalés d'un cran vers la gauche, et le bit Q-1 va être généré à partir de portes XNOR placées à différents Q. L'emplacement des portes XNOR a été déterminé par la table de Wayne Rahnke donnée en annexe pour ce laboratoire. Il y est indiqué que pour 8 bits, on doit placer les portes XNOR au bits 8, 6, 5 et 4.
 Lorsque toutes les bascules sont à 0, comme on a un premier XNOR qui prend en entrée les bits 8 et 6, qui sont forcément à 0 lorsque les bascules sont initialisées à 0, la sortie sera à 1. Le deuxième XNOR prend en entrée la sortie à 1 du premier XNOR ainsi que le bit 5, sa sortie est donc à 0. Le troisième XNOR prend en entrée la sortie à 0 du deuxième XNOR et le bit 4 qui est à 0. Sa sortie, reliée à la première bascule, est donc à 1. Cela va permetre d'entrer un premier 1, qui va se décaler à chaque tick de l'horloge. C'est grâce à ces portes XNOR qu'on peut ensuite obtenir une suite de bits pseudo-aléatoire.
+
 \\
 \end{tcolorbox}
+
 \section {Modification du registre LFSR}
 Modifier le registre LFSR afin d’initialiser les flip-flops à ‘1’ (utilisez l‘entrée preset) et tester le fonctionnement du registre LFSR.
 \begin{tcolorbox}[colframe=Monokaimagenta,colback=white]
@@ -192,7 +197,7 @@ Lorsqu'on ajoute un Preset à '1', on obtient 0xFF, ce qui correspond à une err
     \label{fig:LSFR_8BITS_PRESET_1_2}
 \end{figure}
 \paragraph
-Comme on utilise des portes XNOR, si toutes les bascules D sont à 1, toutes les sorties des XNOR seront à 1 aussi.
+Comme on utilise des portes XNOR, si toutes les bascules D sont à 1, toutes les sorties des XNOR seront à 1 aussi. Ainsi, seuls des 1 seront passés en entrée Q-1 et il n'y aura qu'une suite de 1 dans les bascules, et aucun code pseudo-aléatoire ne sera généré.
 \\
 \end{tcolorbox}
     
